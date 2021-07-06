@@ -1,0 +1,43 @@
+//윈도우 서버 2012R
+
+slmgr /ipk D2N9P-3P6X9-2R39C-7RTCD-MDVJX
+
+ 
+
+//윈도우 10 pro
+
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+
+slmgr /skms kms.digiboy.ir
+
+slmgr /ato
+
+※ slmgr 옵션
+-dli : 라이선스 정보 확인.
+-dlv : 상세 라이선스 정보 확인. 유예기간(Grace period)과 유예기간 연장횟수(rearm counts) 확인 가능.
+-xpr : 라이선스 만료일자 확인.
+-rearm : 평가판 유예기간 초기화
+
+
+Windows Server 2012 R2 평가판을 정품으로 인증 받는 방법
+
+
+slmgr.vbs -dlv
+
+
+DISM /online /Get-CurrentEdition
+
+DISM /online /Get-TargetEditions
+
+DISM /online /Set-Edition:ServerStandard /ProductKey:D2N9P-3P6X9-2R39C-7RTCD-MDVJX /AcceptEula
+
+
+설정이 완료되면 컴퓨터를 다시 시작합니다.
+
+
+Windows Server 2012 R2 Server Standard
+
+D2N9P-3P6X9-2R39C-7RTCD-MDVJX
+
+BN3D2-R7TKB-3YPBD-8DRP2-27GG4
+

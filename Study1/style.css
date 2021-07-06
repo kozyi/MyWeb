@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: darkslateblue;
+}
+
+.warp
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.material-icons
+{
+    font-size: 10rem;
+}
+
+.lg-text
+{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sm-text
+{
+    font-size: 1.5rem;
+}
+
+#dynamic
+{
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+
+#dynamic.active::after
+{
+    display: none;
+}
+
+.container
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    perspective: 1000px;
+}
+
+.flib-btn
+{
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transform-style: preserve-3d;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.flib-btn:hover
+{
+    transform: rotateX(-90deg);
+}
+
+.front
+{
+    background-color: goldenrod;
+    height:100px;
+    transform: translateZ(50px);
+}
+
+.back
+{
+    background-color: darkgoldenrod;
+    height:100px;
+    transform: rotateX( 90deg) translateZ(150px);
+}

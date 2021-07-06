@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calc">
+        <form name="baseform">
+            <input type="text" name="output" class="outputID" readonly>
+            <input type="button" class="clear" value="C" onclick="document.baseform.output.value = ''">
+            <input type="button" class="operator" value="÷" onclick="document.baseform.output.value += '/'">
+            <input type="button" value="1" onclick="document.baseform.output.value += '1'">
+            <input type="button" value="2" onclick="document.baseform.output.value += '2'">
+            <input type="button" value="3" onclick="document.baseform.output.value += '3'">
+            <input type="button" class="operator" value="×"  onclick="document.baseform.output.value += '*'">
+            <input type="button" value="4" onclick="document.baseform.output.value += '4'">
+            <input type="button" value="5" onclick="document.baseform.output.value += '5'">
+            <input type="button" value="6" onclick="document.baseform.output.value += '6'">
+            <input type="button" class="operator" value="+" onclick="document.baseform.output.value += '+'">
+            <input type="button" value="7" onclick="document.baseform.output.value += '7'">
+            <input type="button" value="8" onclick="document.baseform.output.value += '8'">
+            <input type="button" value="9" onclick="document.baseform.output.value += '9'">
+            <input type="button" class="operator" value="–" onclick="document.baseform.output.value += '-'">
+            <input type="button" class="dot" value=".">
+            <input type="button" value="0" onclick="document.baseform.output.value += '0'">
+            <input type="button" class="operator result" value="=" onclick="document.baseform.output.value =eval(document.baseform.output.value)">
+        </form>
+    </div>
+</body>
+
+</html>
