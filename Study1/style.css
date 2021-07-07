@@ -1,101 +1,95 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body
-{
-    background-color: darkslateblue;
+body {
+  background-color: darkslateblue;
 }
 
-.warp
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    text-align: center;
+.mov {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  text-align: center;
 }
 
-.material-icons
-{
-    font-size: 10rem;
+.warp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, +10%);
+  color: white;
+  text-align: center;
 }
 
-.lg-text
-{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
+.material-icons {
+  font-size: 10rem;
 }
 
-.sm-text
-{
-    font-size: 1.5rem;
+.lg-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-#dynamic
-{
-    position: relative;
-    display: inline-block;
+.sm-text {
+  font-size: 1.5rem;
 }
 
-#dynamic::after
-{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -10px;
-    width: 4px;
-    height: 100%;
-    background-color: white;
+#dynamic {
+  position: relative;
+  display: inline-block;
 }
 
-#dynamic.active::after
-{
-    display: none;
+#dynamic::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
 }
 
-.container
-{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    perspective: 1000px;
+#dynamic.active::after {
+  display: none;
 }
 
-.flib-btn
-{
-    width: 200px;
-    height: 100px;
-    color: white;
-    text-align: center;
-    line-height: 100px;
-    transform-style: preserve-3d;
-    transition: .5s;
-    cursor: pointer;
+.container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
 }
 
-.flib-btn:hover
-{
-    transform: rotateX(-90deg);
+.flib-btn {
+  width: 200px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.front
-{
-    background-color: goldenrod;
-    height:100px;
-    transform: translateZ(50px);
+.flib-btn:hover {
+  transform: rotateX(-90deg);
 }
 
-.back
-{
-    background-color: darkgoldenrod;
-    height:100px;
-    transform: rotateX( 90deg) translateZ(150px);
+.front {
+  background-color: goldenrod;
+  height: 100px;
+  transform: translateZ(50px);
+}
+
+.back {
+  background-color: darkgoldenrod;
+  height: 100px;
+  transform: rotateX(90deg) translateZ(150px);
 }
