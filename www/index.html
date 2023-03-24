@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SABONG</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+</head>
+
+<body>
+ 
+ <style>
+        .layer{
+  position: relative;
+  top:0;right:0;bottom:0;left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  display:-webkit-flex;
+  -webkit-align-item:center;
+  -webkit-justify-content:center;
+}
+ </style>
+
+    <header class="text-center text-white masthead" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;height: 149px;padding-top: 0px;padding-bottom: 0px;">
+        <div class="overlay" style="height: 148px;">
+            <h1 class="mb-5" style="padding-top: 0px;height: 67px;margin-bottom: 0px;color: var(--bs-danger);font-weight: bold;margin-top: 50px;">SABONG</h1>
+        </div>
+    </header>
+
+    <section class="layer">
+        <video id='hls-example'  class="video-js vjs-default-skin vjs-big-play-centered" controls preload autoplay data-setup='{}' allowfullscreen="" height="760" frameborder="0" >
+            <source src="https://unznbpusqiti16532561.cdn.ntruss.com/live/video/ls-20230323110003-GcZAp/1080p-16-9/playlist.m3u8" type="application/x-mpegURL" >
+        </video>
+    </section>
+
+    <section class="text-center bg-light features-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" style="width: 650px;">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="width: 650px;">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+
+    <!-- HTML -->
+    
+
+    
+    <!-- JS code -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+    
+    <script>
+    var player = videojs('hls-example',{autoplay:true});
+    player.fill(true);
+    player.play();
+    </script>
+
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
